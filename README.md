@@ -2,7 +2,7 @@
 
 Python and TensorFlow 2.16 implementation of the multi-criteria decision-making (MCDM) ranking algorithm and deep-learning sensitivity analysis from:
 
-> Tonmoy, P.R., *In-Silico Predictive Modeling of Process Parameter Interactions in Sacubitril/Valsartan Co-crystal Tablet Manufacturing: A Quality by Design Strategy for Real-Time Quality Assurance.*
+> Tonmoy, P.R., Sarkar, M.R. *In-Silico Predictive Modeling of Process Parameter Interactions in Sacubitril/Valsartan Co-crystal Tablet Manufacturing: A Quality by Design Strategy for Real-Time Quality Assurance.*
 
 ## Overview
 
