@@ -3,7 +3,7 @@ Multi-Criteria Decision-Making (MCDM) ranking algorithm for
 Sacubitril/Valsartan co-crystal tablet Box-Behnken design runs.
 
 Reference:
-    Tonmoy, P.R.,"In-Silico Predictive Modeling of Process
+    Tonmoy, P.R., Sarkar, M.R. "In-Silico Predictive Modeling of Process
     Parameter Interactions in Sacubitril/Valsartan Co-crystal Tablet
     Manufacturing: A Quality by Design Framework for Real-Time Quality
     Assurance." Appendix A.
