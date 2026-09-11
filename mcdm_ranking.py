@@ -5,13 +5,12 @@ Sacubitril/Valsartan co-crystal tablet Box-Behnken design runs.
 Reference:
     Tonmoy, P.R., Sarkar, M.R. "In-Silico Predictive Modeling of Process
     Parameter Interactions in Sacubitril/Valsartan Co-crystal Tablet
-    Manufacturing: A Quality by Design Strategy for Real-Time Quality
+    Manufacturing: A Quality by Design Framework for Real-Time Quality
     Assurance." Appendix A.
 
 Method:
     Weighted min-max normalization (1-10 scale) of three critical
-    quality attributes, followed by a weighted-sum Final Efficiency
-    Score (FES):
+    quality attributes, followed by a weighted-sum Final Efficiency Score (FES):
 
         FES = 0.50 * S_Dissolution + 0.30 * S_TH + 0.20 * S_DT
 
@@ -24,32 +23,26 @@ Environment: Python 3.10+ | NumPy, Pandas
 import numpy as np
 import pandas as pd
 
-# Experimental data: TH = Tablet Hardness (N), Dissolution = Q15 (%), DT = Disintegration Time (s)
+# Canonical BBD Experimental Data
 data = {
     "Run": np.arange(1, 16),
     "TH": [
-        114.78, 104.47, 121.00, 120.80, 104.22, 116.08, 123.27,
-        111.57, 116.65, 93.35, 127.10, 109.39, 113.61, 103.32, 102.34,
+        82.00, 114.00, 125.00, 78.00, 68.00, 134.00, 124.71,
+        118.00, 114.73, 95.00, 125.00, 92.00, 121.00, 108.00, 110.00,
     ],
     "Dissolution": [
-        89.66, 91.82, 86.51, 87.74, 88.77, 89.47, 94.20, 86.88,
-        72.46, 91.48, 78.86, 88.05, 91.22, 80.72, 90.40,
+        89.00, 78.00, 70.00, 93.00, 96.00, 65.00, 91.88,
+        78.00, 89.91, 82.00, 72.00, 88.00, 90.94, 92.00, 85.00,
     ],
     "DT": [
-        295.08, 304.27, 374.60, 260.88, 255.79, 315.82, 250.00, 261.40,
-        375.37, 271.00, 435.07, 314.25, 282.36, 346.45, 273.33,
+        230.0, 360.0, 450.0, 190.0, 150.0, 520.0, 248.6,
+        400.0, 239.6, 280.0, 460.0, 260.0, 226.6, 210.0, 320.0,
     ],
 }
 
 
 def normalize(series: pd.Series, weight_type: str = "beneficial") -> pd.Series:
-    """Min-max normalize a response to a 1-10 dimensionless scale.
-
-    Args:
-        series: raw response values.
-        weight_type: 'beneficial' if higher is better (e.g. Dissolution, TH),
-            'non-beneficial' if lower is better (e.g. DT).
-    """
+    """Min-max normalize a response to a 1-10 dimensionless scale."""
     if weight_type == "beneficial":
         return ((series - series.min()) / (series.max() - series.min())) * 9 + 1
     return ((series.max() - series) / (series.max() - series.min())) * 9 + 1
@@ -62,7 +55,7 @@ def rank_runs(df: pd.DataFrame) -> pd.DataFrame:
     df["S_Dissolution"] = normalize(df["Dissolution"], "beneficial")
     df["S_DT"] = normalize(df["DT"], "non-beneficial")
 
-    w_dissolution, w_th, w_dt = 0.50, 0.30, 0.20  # Dissolution | TH | DT
+    w_dissolution, w_th, w_dt = 0.50, 0.30, 0.20
     df["FES"] = (
         df["S_Dissolution"] * w_dissolution
         + df["S_TH"] * w_th
@@ -76,7 +69,7 @@ def main() -> None:
     df = pd.DataFrame(data)
     df_ranked = rank_runs(df)
 
-    print("Top 5 Runs:")
+    print("Top 5 Runs (Canonical BBD Dataset):")
     print(
         df_ranked[["Run", "S_Dissolution", "S_TH", "S_DT", "FES"]]
         .head(5)
