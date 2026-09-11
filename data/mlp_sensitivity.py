@@ -34,7 +34,7 @@ tf.random.set_seed(42)
 def generate_monte_carlo_batches(n_samples: int = 1000) -> pd.DataFrame:
     """Generate virtual batches using RSM equations with Monte Carlo noise sampling."""
     
-    # Random sampling of Process Parameters (CPPs) within/extended operating range
+    # Process Parameters (CPPs)
     # A: Impeller Speed (150 - 350 rpm), B: Binder Rate (60 - 160 g/min), C: Compression Force (12 - 28 kN)
     A = np.random.uniform(150, 350, n_samples)
     B = np.random.uniform(60, 160, n_samples)
@@ -73,7 +73,7 @@ def build_and_train_mlp(X_train: np.ndarray, y_train: np.ndarray, X_val: np.ndar
         Dropout(0.2),
         Dense(32, activation='relu', kernel_regularizer=l2(0.01)),
         Dense(16, activation='relu'),
-        Dense(1, activation='linear')  # Single CQA target prediction (e.g., Q15)
+        Dense(1, activation='linear')  # Single CQA target prediction (Q15 Dissolution)
     ])
 
     model.compile(optimizer='adam', loss='mse', metrics=['mae'])
