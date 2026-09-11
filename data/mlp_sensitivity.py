@@ -3,7 +3,7 @@ TensorFlow 2.16 Multilayer Perceptron (MLP) Surrogate Engine & Monte Carlo Simul
 for Sacubitril/Valsartan Co-crystal Tablet Process Sensitivity Analysis.
 
 Reference:
-    Tonmoy, P.R.,"In-Silico Predictive Modeling of Process Parameter
+    Tonmoy, P.R., Sarkar, M.R. "In-Silico Predictive Modeling of Process Parameter
     Interactions in Sacubitril/Valsartan Co-crystal Tablet Manufacturing: A Quality
     by Design Framework for Real-Time Quality Assurance."
 
