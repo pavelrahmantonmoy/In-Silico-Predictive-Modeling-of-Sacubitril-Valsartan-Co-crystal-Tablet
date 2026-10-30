@@ -1,0 +1,532 @@
+<!DOCTYPE DEXXMLDoc SYSTEM "DEXXMLDoc.DTD">
+<DEXXMLDoc name="IJAP.dxpx" creator="S360" version="25.0.7">
+<designInfo studyType="ResponseSurface" studySubType="Randomized" designType="BoxBehnken" noOfRuns="15" noOfFactors="3" noOfResponses="4" noOfAnalyses="4">
+<designNotes>From XML document, Article-2.dxpx, created by S360</designNotes>
+</designInfo>
+<designNames/>
+<blockInfo>
+<block code="0" name="Block 1"/>
+</blockInfo>
+<factorInfo>
+<factor id="A" name="Impeller Speed" unit="RPM" type="Numeric" uuid="28dfbf1f-edef-4e8a-8067-7f603a8774f8">
+<numeric format="General" low="150" high="350" stdDev="0"/>
+</factor>
+<factor id="B" name="Binder Rate" unit="g/min" type="Numeric" uuid="0cacbd56-b195-4b04-b7dc-72690b92e21d">
+<numeric format="General" low="60" high="160" stdDev="0"/>
+</factor>
+<factor id="C" name="Compression" unit="kN" type="Numeric" uuid="007b3858-0f79-445f-a46e-5e836c103018">
+<numeric format="General" low="12" high="24" stdDev="0"/>
+</factor>
+</factorInfo>
+<constraintInfo/>
+<responseInfo>
+<response id="1" name="Hardness" unit="N" type="Normal" format="General" responseUuId="335ed968-570c-4efb-a301-dee43f775e5c"/>
+<response id="2" name="Dissolution" unit="%" type="Normal" format="General" responseUuId="2accbca5-b6ad-4f61-88b6-fd4dd57d9e99"/>
+<response id="3" name="DT" unit="sec" type="Normal" format="General" responseUuId="1950bc19-2fc9-4804-bd96-26e294cb1ff7"/>
+<response id="4" name="Assay" unit="%" type="Normal" format="General" responseUuId="2c21dca4-13e1-46c9-ac65-1e9ced1de0a2"/>
+</responseInfo>
+<guiState>
+<designLayout>
+<visibleColumns>
+<column type="stdorder">
+<width>35</width>
+</column>
+<column type="runorder">
+<width>35</width>
+</column>
+<column id="A" type="factor">
+<width>95</width>
+</column>
+<column id="B" type="factor">
+<width>95</width>
+</column>
+<column id="C" type="factor">
+<width>95</width>
+</column>
+<column id="1" type="response">
+<width>95</width>
+</column>
+<column id="2" type="response">
+<width>95</width>
+</column>
+<column id="3" type="response">
+<width>95</width>
+</column>
+<column id="4" type="response">
+<width>95</width>
+</column>
+</visibleColumns>
+</designLayout>
+<graphSettings>
+<graphArea name="" graph="0">
+<selectedGraph>0</selectedGraph>
+<colorBy type="runOrder"/>
+<shapeBy type="none"/>
+<sizeBy type="none"/>
+<axisX type="factor" index="0"/>
+<axisY type="response" index="0"/>
+<axisY type="none"/>
+<axisZ type="none"/>
+<axisX_Histogram type="response" index="0"/>
+<axisX_BoxPlot type="none"/>
+<axisY_BoxPlot type="response" index="0"/>
+<axisX_Line type="factor" index="0"/>
+<axisY_Line type="response" index="0"/>
+<axisY_Line type="none"/>
+<histograms/>
+</graphArea>
+<graphArea name="EffectsNoRestriction" graph="0"/>
+<graphArea name="EffectsNoRestriction" graph="1"/>
+<graphArea name="EffectsNoRestriction" graph="2"/>
+<graphArea name="Diagnostics" index="0"/>
+<graphArea name="Classification" index="0">
+<colorBy type="none"/>
+<tracedPoint DrawLineLoo="false" DrawLineIs="false" falsePositiveLoo="0" truePositiveLoo="0" falsePositiveIs="0" truePositiveIs="0"/>
+</graphArea>
+<graphArea name="Model" index="0" graph="0">
+<graphMethod>Contour</graphMethod>
+<colorMapKey/>
+<space>
+<codedPoint>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+</codedPoint>
+<axis index="0">0</axis>
+<axis index="1">1</axis>
+<axis index="2">-1</axis>
+<axis index="3">-1</axis>
+</space>
+</graphArea>
+<graphArea name="EffectsNoRestriction" graph="0"/>
+<graphArea name="EffectsNoRestriction" graph="1"/>
+<graphArea name="EffectsNoRestriction" graph="2"/>
+<graphArea name="Diagnostics" index="1"/>
+<graphArea name="Classification" index="1">
+<colorBy type="none"/>
+<tracedPoint DrawLineLoo="false" DrawLineIs="false" falsePositiveLoo="0" truePositiveLoo="0" falsePositiveIs="0" truePositiveIs="0"/>
+</graphArea>
+<graphArea name="Model" index="1" graph="0">
+<graphMethod>Contour</graphMethod>
+<colorMapKey>Custom</colorMapKey>
+<contours type="response" index="1" transformed="false" mode="auto">
+<format>General</format>
+<contourLevel>70</contourLevel>
+<contourLevel>80</contourLevel>
+<contourLevel>90</contourLevel>
+</contours>
+<space>
+<codedPoint>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+</codedPoint>
+<axis index="0">0</axis>
+<axis index="1">2</axis>
+<axis index="2">-1</axis>
+<axis index="3">-1</axis>
+</space>
+<legend key="4" title="Stat-Ease 360® Software">
+<dock type="TopLeft"/>
+<showItems>
+<showItem>Response</showItem>
+<showItem>Info</showItem>
+<showItem>ColorGradient</showItem>
+<showItem>Data</showItem>
+<showItem>PointInfo</showItem>
+</showItems>
+</legend>
+</graphArea>
+<graphArea name="EffectsNoRestriction" graph="0"/>
+<graphArea name="EffectsNoRestriction" graph="1"/>
+<graphArea name="EffectsNoRestriction" graph="2"/>
+<graphArea name="Diagnostics" index="2"/>
+<graphArea name="Classification" index="2">
+<colorBy type="none"/>
+<tracedPoint DrawLineLoo="false" DrawLineIs="false" falsePositiveLoo="0" truePositiveLoo="0" falsePositiveIs="0" truePositiveIs="0"/>
+</graphArea>
+<graphArea name="Model" index="2" graph="0">
+<graphMethod>Contour</graphMethod>
+<colorMapKey/>
+<space>
+<codedPoint>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+</codedPoint>
+<axis index="0">0</axis>
+<axis index="1">1</axis>
+<axis index="2">-1</axis>
+<axis index="3">-1</axis>
+</space>
+</graphArea>
+<graphArea name="EffectsNoRestriction" graph="0"/>
+<graphArea name="EffectsNoRestriction" graph="1"/>
+<graphArea name="EffectsNoRestriction" graph="2"/>
+<graphArea name="Diagnostics" index="3"/>
+<graphArea name="Classification" index="3">
+<colorBy type="none"/>
+<tracedPoint DrawLineLoo="false" DrawLineIs="false" falsePositiveLoo="0" truePositiveLoo="0" falsePositiveIs="0" truePositiveIs="0"/>
+</graphArea>
+<graphArea name="Model" index="3" graph="0">
+<graphMethod>Contour</graphMethod>
+<colorMapKey/>
+<space>
+<codedPoint>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+</codedPoint>
+<axis index="0">0</axis>
+<axis index="1">1</axis>
+<axis index="2">-1</axis>
+<axis index="3">-1</axis>
+</space>
+</graphArea>
+<graphArea name="GraphicalOptimization">
+<graphMethod>Contour</graphMethod>
+<colorMapKey/>
+<space>
+<codedPoint>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+</codedPoint>
+<axis index="0">0</axis>
+<axis index="1">1</axis>
+<axis index="2">-1</axis>
+<axis index="3">-1</axis>
+</space>
+</graphArea>
+<graphArea name="NumericalOptimization">
+<graphMethod>Contour</graphMethod>
+<colorMapKey/>
+<space>
+<codedPoint>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+</codedPoint>
+<axis index="0">0</axis>
+<axis index="1">1</axis>
+<axis index="2">-1</axis>
+<axis index="3">-1</axis>
+</space>
+</graphArea>
+</graphSettings>
+<perspectives>
+<report name="diagnostics_notebook_Assay V2" width="1280" height="720">42ed60c06a1d7c111bdaf65300000002=+0|42ed63506a1d7c121bdaf6aa00000003=+1,2,6|42ed6b006a1d7c121bdaf6ac00000004=4,*5|42ed6d906a1d7c121bdaf6b000000005=+3,7,8,9,10@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42ed60c06a1d7c111bdaf65300000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=256;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42ed63506a1d7c121bdaf6aa00000003;caption=;state=2098172;dir=2;layer=4;row=0;pos=0;prop=100000;bestw=532;besth=256;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42ed6b006a1d7c121bdaf6ac00000004;caption=;state=2098172;dir=3;layer=5;row=0;pos=0;prop=100000;bestw=528;besth=264;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42ed6d906a1d7c121bdaf6b000000005;caption=;state=2098172;dir=3;layer=5;row=0;pos=1;prop=100000;bestw=528;besth=264;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,4,0)=534|dock_size(3,5,0)=266|</report>
+<report name="diagnostics_notebook_DT V2" width="1280" height="720">42ed49b06a1d7be71bda4ed000000002=+0|42ed60c06a1d7be71bda4f2200000003=+1,2,6|42ed70206a1d7be71bda4f2400000004=4,*5|42ed44906a1d7be71bda4f2600000005=+3,7,8,9,10@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42ed49b06a1d7be71bda4ed000000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=256;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42ed60c06a1d7be71bda4f2200000003;caption=;state=2098172;dir=2;layer=4;row=0;pos=0;prop=100000;bestw=532;besth=256;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42ed70206a1d7be71bda4f2400000004;caption=;state=2098172;dir=3;layer=5;row=0;pos=0;prop=100000;bestw=528;besth=264;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42ed44906a1d7be71bda4f2600000005;caption=;state=2098172;dir=3;layer=5;row=0;pos=1;prop=100000;bestw=528;besth=264;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,4,0)=534|dock_size(3,5,0)=266|</report>
+<report name="diagnostics_notebook_Dissolution V2" width="1280" height="720">42ed59106a1d7b4c1bd7f39300000002=+0|42ed63506a1d7b4c1bd7f3e700000003=+1,2,6|42ed56806a1d7b4c1bd7f3e900000004=4,*5|42ed47206a1d7b4c1bd7f3eb00000005=+3,7,8,9,10@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42ed59106a1d7b4c1bd7f39300000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=256;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42ed63506a1d7b4c1bd7f3e700000003;caption=;state=2098172;dir=2;layer=4;row=0;pos=0;prop=100000;bestw=532;besth=256;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42ed56806a1d7b4c1bd7f3e900000004;caption=;state=2098172;dir=3;layer=5;row=0;pos=0;prop=100000;bestw=528;besth=264;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42ed47206a1d7b4c1bd7f3eb00000005;caption=;state=2098172;dir=3;layer=5;row=0;pos=1;prop=100000;bestw=528;besth=264;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,4,0)=534|dock_size(3,5,0)=266|</report>
+<report name="diagnostics_notebook_Hardness V2" width="1280" height="720">42a224306a1d7aa81bd5714200000002=+0|42ed60c06a1d7aa81bd5719f00000003=+1,2,6|42ed7a606a1d7aa81bd571a200000004=4,*5|42ed63506a1d7aa81bd571a700000005=+3,7,8,9,10@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42a224306a1d7aa81bd5714200000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=256;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42ed60c06a1d7aa81bd5719f00000003;caption=;state=2098172;dir=2;layer=4;row=0;pos=0;prop=100000;bestw=532;besth=256;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42ed7a606a1d7aa81bd571a200000004;caption=;state=2098172;dir=3;layer=5;row=0;pos=0;prop=100000;bestw=528;besth=264;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42ed63506a1d7aa81bd571a700000005;caption=;state=2098172;dir=3;layer=5;row=0;pos=1;prop=100000;bestw=528;besth=264;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,4,0)=534|dock_size(3,5,0)=266|</report>
+<report name="main_frame" width="1296" height="688">layout2|name=main_toolbar;caption=Toolbar;state=2106108;dir=1;layer=10;row=0;pos=0;prop=100000;bestw=476;besth=37;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=start_screen;caption=;state=258;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=0;besth=0;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=navigation_tree;caption=Navigation Pane;state=5628;dir=4;layer=1;row=0;pos=0;prop=100000;bestw=200;besth=600;minw=40;minh=40;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=node_view;caption=;state=4352;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=16;besth=16;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Layout Tool;caption=;state=2110204;dir=1;layer=10;row=0;pos=478;prop=100000;bestw=277;besth=37;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Graphs Tool;caption=;state=2110204;dir=1;layer=10;row=0;pos=757;prop=100000;bestw=788;besth=37;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Factors Tool;caption=Factors Tool;state=2098684;dir=2;layer=1;row=0;pos=0;prop=100000;bestw=261;besth=550;minw=40;minh=40;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=216;floath=394|name=Crosshairs Window;caption=Crosshairs Window;state=2098686;dir=4;layer=1;row=0;pos=1;prop=100000;bestw=200;besth=250;minw=40;minh=40;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=217;floath=290|name=Pairwise Comparisons Tool;caption=Pairwise Comparisons Tool;state=2098686;dir=4;layer=1;row=0;pos=2;prop=100000;bestw=200;besth=250;minw=40;minh=40;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=217;floath=290|dock_size(1,10,0)=39|dock_size(5,0,0)=10|dock_size(4,1,0)=200|dock_size(2,1,0)=261|</report>
+<report name="modelgraph_notebook_Assay V2" width="1280" height="720">42ed47206a1d7e2e1be3358100000002=*0@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=532;besth=264;minw=532;minh=264;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42ed47206a1d7e2e1be3358100000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=1062;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|</report>
+<report name="modelgraph_notebook_DT V2" width="1280" height="720">42ed53f06a1d7dd91be1e85a00000002=*0@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=532;besth=264;minw=532;minh=264;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42ed53f06a1d7dd91be1e85a00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=1062;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|</report>
+<report name="modelgraph_notebook_Dissolution (C)" width="1280" height="720">e865eca06aa3e6e00000252c00000002=*0@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=399;besth=264;minw=399;minh=264;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=e865eca06aa3e6e00000252c00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=797;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|</report>
+<report name="modelgraph_notebook_Dissolution V2" width="1280" height="720">42ed63506a1d7ce11bde20c200000002=*0@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=532;besth=264;minw=532;minh=264;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42ed63506a1d7ce11bde20c200000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=1062;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|</report>
+<report name="modelgraph_notebook_Hardness V2" width="1280" height="720">42ed56806a1d7c401bdbae1500000002=*0@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=532;besth=264;minw=532;minh=264;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42ed56806a1d7c401bdbae1500000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=1062;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|</report>
+<report name="report_anova_Assay (1)" width="1280" height="720">28d70cf06aa2c51d00026a4900000002=*0|28d717306aa2c51d00026a7a00000003=+1,2|28d714a06aa2c51d00026a7e00000004=+3,4,5@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=28d70cf06aa2c51d00026a4900000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=322;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=28d717306aa2c51d00026a7a00000003;caption=;state=2098172;dir=2;layer=3;row=0;pos=0;prop=21374;bestw=734;besth=53;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=28d714a06aa2c51d00026a7e00000004;caption=;state=2098172;dir=2;layer=3;row=0;pos=1;prop=178626;bestw=734;besth=467;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,3,0)=736|</report>
+<report name="report_anova_Assay (3)" width="1280" height="720">2cc9eb906aa2f0ed00ad8c9100000002=*0|2cc9c0006aa2f0ed00ad8ceb00000003=+1,2|2cc9bd706aa2f0ed00ad8cee00000004=+3,4,5@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=2cc9eb906aa2f0ed00ad8c9100000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=2cc9c0006aa2f0ed00ad8ceb00000003;caption=;state=2098172;dir=2;layer=3;row=0;pos=0;prop=20229;bestw=532;besth=50;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=2cc9bd706aa2f0ed00ad8cee00000004;caption=;state=2098172;dir=2;layer=3;row=0;pos=1;prop=179771;bestw=532;besth=470;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,3,0)=534|</report>
+<report name="report_anova_Assay (C)" width="1280" height="720">109f65306aa38efb021d39c400000002=+0|109f72006aa38efb021d39f900000003=*1,2|109f67c06aa38efb021d39fd00000004=+3,4,5@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=109f65306aa38efb021d39c400000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=109f72006aa38efb021d39f900000003;caption=;state=2098172;dir=2;layer=3;row=0;pos=0;prop=23664;bestw=532;besth=59;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=109f67c06aa38efb021d39fd00000004;caption=;state=2098172;dir=2;layer=3;row=0;pos=1;prop=176336;bestw=532;besth=461;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,3,0)=534|</report>
+<report name="report_anova_Assay V2" width="1280" height="720">28d707d06aa2d9b60052df2c00000002=*0|28d70cf06aa2d9b60052dfb100000003=+1,2|28d717306aa2d9b60052dfb500000004=+3,4,5@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=28d707d06aa2d9b60052df2c00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=28d70cf06aa2d9b60052dfb100000003;caption=;state=2098172;dir=2;layer=3;row=0;pos=0;prop=100000;bestw=532;besth=260;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=28d717306aa2d9b60052dfb500000004;caption=;state=2098172;dir=2;layer=3;row=0;pos=1;prop=100000;bestw=532;besth=260;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,3,0)=534|</report>
+<report name="report_anova_DT (1)" width="1280" height="720">28d717306aa2c5080002167d00000002=+0|28d705406aa2c508000216b100000003=*1,2|28d71c506aa2c508000216b400000004=+3,4,5@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=28d717306aa2c5080002167d00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=28d705406aa2c508000216b100000003;caption=;state=2098172;dir=2;layer=3;row=0;pos=0;prop=33206;bestw=532;besth=84;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=28d71c506aa2c508000216b400000004;caption=;state=2098172;dir=2;layer=3;row=0;pos=1;prop=166794;bestw=532;besth=436;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,3,0)=534|</report>
+<report name="report_anova_DT (3)" width="1280" height="720">2cc9eb906aa2f0d000ad1c5900000002=*0|2cc9d1f06aa2f0d000ad1cca00000003=+1,2|2cc9c7b06aa2f0d000ad1ccf00000004=+3,4,5@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=2cc9eb906aa2f0d000ad1c5900000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=2cc9d1f06aa2f0d000ad1cca00000003;caption=;state=2098172;dir=2;layer=3;row=0;pos=0;prop=31297;bestw=532;besth=79;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=2cc9c7b06aa2f0d000ad1ccf00000004;caption=;state=2098172;dir=2;layer=3;row=0;pos=1;prop=168703;bestw=532;besth=441;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,3,0)=534|</report>
+<report name="report_anova_DT (C)" width="1280" height="720">109f6f706aa38edf021ccb5300000002=*0|109f65306aa38edf021ccb8900000003=+1,2|109f72006aa38edf021ccb8c00000004=+3,4,5@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=109f6f706aa38edf021ccb5300000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=109f65306aa38edf021ccb8900000003;caption=;state=2098172;dir=2;layer=3;row=0;pos=0;prop=22137;bestw=532;besth=55;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=109f72006aa38edf021ccb8c00000004;caption=;state=2098172;dir=2;layer=3;row=0;pos=1;prop=177863;bestw=532;besth=465;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,3,0)=534|</report>
+<report name="report_anova_DT V1" width="1280" height="720">28d71c506aa2d99800526a3d00000002=*0|28d717306aa2d99800526ab700000003=+1,2|28d70a606aa2d99800526abc00000004=+3,4,5@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=28d71c506aa2d99800526a3d00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=28d717306aa2d99800526ab700000003;caption=;state=2098172;dir=2;layer=3;row=0;pos=0;prop=94656;bestw=532;besth=245;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=28d70a606aa2d99800526abc00000004;caption=;state=2098172;dir=2;layer=3;row=0;pos=1;prop=105344;bestw=532;besth=275;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,3,0)=534|</report>
+<report name="report_anova_Dissolution (1)" width="1280" height="720">28d71ee06aa2c4ec0001a8cb00000002=*0|28d721706aa2c4ec0001a90800000003=+1,2|28d719c06aa2c4ec0001a90b00000004=+3,4,5@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=28d71ee06aa2c4ec0001a8cb00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=492;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=28d721706aa2c4ec0001a90800000003;caption=;state=2098172;dir=2;layer=3;row=0;pos=0;prop=51145;bestw=564;besth=131;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=28d719c06aa2c4ec0001a90b00000004;caption=;state=2098172;dir=2;layer=3;row=0;pos=1;prop=148855;bestw=564;besth=389;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,3,0)=566|</report>
+<report name="report_anova_Dissolution (3)" width="1280" height="720">2cc9cf606aa2f0b400acaf4e00000002=*0|2cc9eb906aa2f0b400acafb600000003=+1,2|2cc9b8506aa2f0b400acafbb00000004=+3,4,5@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=2cc9cf606aa2f0b400acaf4e00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=2cc9eb906aa2f0b400acafb600000003;caption=;state=2098172;dir=2;layer=3;row=0;pos=0;prop=30534;bestw=532;besth=77;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=2cc9b8506aa2f0b400acafbb00000004;caption=;state=2098172;dir=2;layer=3;row=0;pos=1;prop=169466;bestw=532;besth=443;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,3,0)=534|</report>
+<report name="report_anova_Dissolution (C)" width="1280" height="720">109f5d806aa38eba021c3bd500000002=*0|109f67c06aa38eba021c3c0e00000003=+1,2|109f72006aa38eba021c3c1000000004=+3,4,5@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=109f5d806aa38eba021c3bd500000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=109f67c06aa38eba021c3c0e00000003;caption=;state=2098172;dir=2;layer=3;row=0;pos=0;prop=20992;bestw=532;besth=52;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=109f72006aa38eba021c3c1000000004;caption=;state=2098172;dir=2;layer=3;row=0;pos=1;prop=179008;bestw=532;besth=468;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,3,0)=534|</report>
+<report name="report_anova_Hardness (2)" width="1280" height="720">28d71c506aa2d9710051d1d500000002=*0|28d717306aa2d9710051d22600000003=+1,2|28d721706aa2d9710051d22a00000004=+3,4,5@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=28d71c506aa2d9710051d1d500000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=28d717306aa2d9710051d22600000003;caption=;state=2098172;dir=2;layer=3;row=0;pos=0;prop=96564;bestw=532;besth=250;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=28d721706aa2d9710051d22a00000004;caption=;state=2098172;dir=2;layer=3;row=0;pos=1;prop=103436;bestw=532;besth=270;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,3,0)=534|</report>
+<report name="report_anova_Hardness (3)" width="1280" height="720">28d71ee06aa2c4cc00012da300000002=*0|28d714a06aa2c4cc00012dd700000003=+1,2|28d70cf06aa2c4cc00012dd900000004=+3,4,5@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=28d71ee06aa2c4cc00012da300000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=28d714a06aa2c4cc00012dd700000003;caption=;state=2098172;dir=2;layer=3;row=0;pos=0;prop=24427;bestw=532;besth=61;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=28d70cf06aa2c4cc00012dd900000004;caption=;state=2098172;dir=2;layer=3;row=0;pos=1;prop=175573;bestw=532;besth=459;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,3,0)=534|</report>
+<report name="report_anova_Hardness (5)" width="1280" height="720">2cc9eb906aa2f05000ab2a6f00000002=*0|2cc9d7106aa2f05000ab2ade00000003=+1,2|2cc9d4806aa2f05000ab2ae100000004=+3,4,5@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=2cc9eb906aa2f05000ab2a6f00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=2cc9d7106aa2f05000ab2ade00000003;caption=;state=2098172;dir=2;layer=3;row=0;pos=0;prop=118702;bestw=532;besth=308;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=2cc9d4806aa2f05000ab2ae100000004;caption=;state=2098172;dir=2;layer=3;row=0;pos=1;prop=81298;bestw=532;besth=212;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,3,0)=534|</report>
+<report name="report_anova_Hardness (C)" width="1280" height="720">109f6f706aa38e84021b672600000002=*0|109f5d806aa38e84021b675500000003=+1,2|109f65306aa38e84021b675800000004=+3,4,5@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=109f6f706aa38e84021b672600000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=109f5d806aa38e84021b675500000003;caption=;state=2098172;dir=2;layer=3;row=0;pos=0;prop=17175;bestw=532;besth=42;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=109f65306aa38e84021b675800000004;caption=;state=2098172;dir=2;layer=3;row=0;pos=1;prop=182825;bestw=532;besth=478;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,3,0)=534|</report>
+<report name="report_anova_Hardness V1" width="1280" height="720">28d721706aa2d9520051577b00000002=*0|28d717306aa2d952005157fe00000003=+1,2|28d70cf06aa2d9520051580100000004=+3,4,5@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=28d721706aa2d9520051577b00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=28d717306aa2d952005157fe00000003;caption=;state=2098172;dir=2;layer=3;row=0;pos=0;prop=90839;bestw=532;besth=235;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=28d70cf06aa2d9520051580100000004;caption=;state=2098172;dir=2;layer=3;row=0;pos=1;prop=109161;bestw=532;besth=285;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,3,0)=534|</report>
+<report name="report_anova_Hardness V2" width="1280" height="720">42ed72b06a1d86df1c052ad100000002=*0|42ed42006a1d86df1c052b1f00000003=+1,2|42ed5e306a1d86df1c052b2200000004=+3,4,5@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42ed72b06a1d86df1c052ad100000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42ed42006a1d86df1c052b1f00000003;caption=;state=2098172;dir=2;layer=3;row=0;pos=0;prop=100000;bestw=532;besth=260;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42ed5e306a1d86df1c052b2200000004;caption=;state=2098172;dir=2;layer=3;row=0;pos=1;prop=100000;bestw=532;besth=260;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,3,0)=534|</report>
+<report name="report_fit_summary_Assay (1)" width="1280" height="720">28d707d06aa2c4ac0000aec200000002=*0|28d712106aa2c4ac0000aeda00000003=+1,3,2@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=28d707d06aa2c4ac0000aec200000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=295;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=28d712106aa2c4ac0000aeda00000003;caption=;state=2098172;dir=2;layer=2;row=0;pos=0;prop=100000;bestw=761;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,2,0)=763|</report>
+<report name="report_fit_summary_Assay (2)" width="1280" height="720">2cc9c2906aa2de80006594e000000002=*0|2cc9bd706aa2de800065956200000003=+1,3,2@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=2cc9c2906aa2de80006594e000000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=2cc9bd706aa2de800065956200000003;caption=;state=2098172;dir=2;layer=2;row=0;pos=0;prop=100000;bestw=532;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,2,0)=534|</report>
+<report name="report_fit_summary_Assay (3)" width="1280" height="720">2cc9d1f06aa2f0eb00ad880800000002=*0|2cc9eb906aa2f0eb00ad885f00000003=+1,3,2@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=2cc9d1f06aa2f0eb00ad880800000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=2cc9eb906aa2f0eb00ad885f00000003;caption=;state=2098172;dir=2;layer=2;row=0;pos=0;prop=100000;bestw=532;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,2,0)=534|</report>
+<report name="report_fit_summary_Assay (C)" width="1280" height="720">109f5d806aa38e7c021b48fb00000002=*0|109f62a06aa38e7c021b491c00000003=+1,3,2@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=109f5d806aa38e7c021b48fb00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=109f62a06aa38e7c021b491c00000003;caption=;state=2098172;dir=2;layer=2;row=0;pos=0;prop=100000;bestw=532;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,2,0)=534|</report>
+<report name="report_fit_summary_Assay V1" width="1280" height="720">42a224306a1d76611bc4bb6400000002=*0|42a226c06a1d76611bc4bb9d00000003=+1,3,2@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42a224306a1d76611bc4bb6400000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42a226c06a1d76611bc4bb9d00000003;caption=;state=2098172;dir=2;layer=2;row=0;pos=0;prop=100000;bestw=532;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,2,0)=534|</report>
+<report name="report_fit_summary_Assay V2" width="1280" height="720">42a231006a1d78d81bce5ed000000002=*0|42ff03b06a1d78d81bce5f0a00000003=+1,3,2@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42a231006a1d78d81bce5ed000000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42ff03b06a1d78d81bce5f0a00000003;caption=;state=2098172;dir=2;layer=2;row=0;pos=0;prop=100000;bestw=532;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,2,0)=534|</report>
+<report name="report_fit_summary_DT (1)" width="1280" height="720">28d47e906aa2c4a40000908f00000002=*0|28e18e006aa2c4a4000090a700000003=+1,3,2@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=28d47e906aa2c4a40000908f00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=28e18e006aa2c4a4000090a700000003;caption=;state=2098172;dir=2;layer=2;row=0;pos=0;prop=100000;bestw=532;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,2,0)=534|</report>
+<report name="report_fit_summary_DT (2)" width="1280" height="720">2cc9e3e06aa2de77006572e400000002=*0|2cc9bd706aa2de770065733100000003=+1,3,2@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=2cc9e3e06aa2de77006572e400000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=2cc9bd706aa2de770065733100000003;caption=;state=2098172;dir=2;layer=2;row=0;pos=0;prop=100000;bestw=532;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,2,0)=534|</report>
+<report name="report_fit_summary_DT (3)" width="1280" height="720">2cc9c5206aa2f0cc00ad0da600000002=*0|2cc9d1f06aa2f0cc00ad0e0c00000003=+1,3,2@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=2cc9c5206aa2f0cc00ad0da600000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=2cc9d1f06aa2f0cc00ad0e0c00000003;caption=;state=2098172;dir=2;layer=2;row=0;pos=0;prop=100000;bestw=532;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,2,0)=534|</report>
+<report name="report_fit_summary_DT (C)" width="1280" height="720">109f6f706aa38e6e021b110d00000002=*0|109f5d806aa38e6e021b112d00000003=+1,3,2@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=109f6f706aa38e6e021b110d00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=109f5d806aa38e6e021b112d00000003;caption=;state=2098172;dir=2;layer=2;row=0;pos=0;prop=100000;bestw=532;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,2,0)=534|</report>
+<report name="report_fit_summary_DT V1" width="1280" height="720">42a224306a1d76541bc4890e00000002=*0|42a226c06a1d76541bc4894c00000003=+1,3,2@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42a224306a1d76541bc4890e00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42a226c06a1d76541bc4894c00000003;caption=;state=2098172;dir=2;layer=2;row=0;pos=0;prop=100000;bestw=532;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,2,0)=534|</report>
+<report name="report_fit_summary_DT V2" width="1280" height="720">42a22e706a1d78ce1bce366c00000002=*0|42a231006a1d78ce1bce36a400000003=+1,3,2@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42a22e706a1d78ce1bce366c00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42a231006a1d78ce1bce36a400000003;caption=;state=2098172;dir=2;layer=2;row=0;pos=0;prop=100000;bestw=532;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,2,0)=534|</report>
+<report name="report_fit_summary_Dissolution (1)" width="1280" height="720">28d47e906aa2c49e0000782900000002=*0|288aaf406aa2c49e0000784300000003=+1,3,2@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=28d47e906aa2c49e0000782900000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=288aaf406aa2c49e0000784300000003;caption=;state=2098172;dir=2;layer=2;row=0;pos=0;prop=100000;bestw=532;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,2,0)=534|</report>
+<report name="report_fit_summary_Dissolution (2)" width="1280" height="720">2cc9d9a06aa2de6c0065484700000002=*0|2cc9c7b06aa2de6d0065489900000003=+1,3,2@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=2cc9d9a06aa2de6c0065484700000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=2cc9c7b06aa2de6d0065489900000003;caption=;state=2098172;dir=2;layer=2;row=0;pos=0;prop=100000;bestw=532;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,2,0)=534|</report>
+<report name="report_fit_summary_Dissolution (3)" width="1280" height="720">2cc9b3306aa2f0af00ac9e1f00000002=*0|2cc9d4806aa2f0b000ac9e5d00000003=+1,3,2@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=2cc9b3306aa2f0af00ac9e1f00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=2cc9d4806aa2f0b000ac9e5d00000003;caption=;state=2098172;dir=2;layer=2;row=0;pos=0;prop=100000;bestw=532;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,2,0)=534|</report>
+<report name="report_fit_summary_Dissolution (C)" width="1280" height="720">109f67c06aa38e62021ae2f800000002=*0|109f65306aa38e62021ae31700000003=+1,3,2@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=109f67c06aa38e62021ae2f800000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=109f65306aa38e62021ae31700000003;caption=;state=2098172;dir=2;layer=2;row=0;pos=0;prop=100000;bestw=532;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,2,0)=534|</report>
+<report name="report_fit_summary_Dissolution V1" width="1280" height="720">42a22e706a1d76451bc44e2200000002=*0|42a224306a1d76451bc44e5c00000003=+1,3,2@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42a22e706a1d76451bc44e2200000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42a224306a1d76451bc44e5c00000003;caption=;state=2098172;dir=2;layer=2;row=0;pos=0;prop=100000;bestw=532;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,2,0)=534|</report>
+<report name="report_fit_summary_Dissolution V2" width="1280" height="720">42a231006a1d78c31bce0c6f00000002=*0|42a22e706a1d78c31bce0ca800000003=+1,3,2@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42a231006a1d78c31bce0c6f00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42a22e706a1d78c31bce0ca800000003;caption=;state=2098172;dir=2;layer=2;row=0;pos=0;prop=100000;bestw=532;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,2,0)=534|</report>
+<report name="report_fit_summary_Hardness (2)" width="1280" height="720">42ed44906a1d88921c0bcd2900000002=*0|42ed5e306a1d88921c0bcd5900000003=+1,3,2@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42ed44906a1d88921c0bcd2900000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42ed5e306a1d88921c0bcd5900000003;caption=;state=2098172;dir=2;layer=2;row=0;pos=0;prop=100000;bestw=532;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,2,0)=534|</report>
+<report name="report_fit_summary_Hardness (3)" width="1280" height="720">28dd84b06aa2c49300004e2b00000002=*0|28de3fe06aa2c49300004e4400000003=+1,3,2@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=28dd84b06aa2c49300004e2b00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=28de3fe06aa2c49300004e4400000003;caption=;state=2098172;dir=2;layer=2;row=0;pos=0;prop=100000;bestw=532;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,2,0)=534|</report>
+<report name="report_fit_summary_Hardness (4)" width="1280" height="720">2cc9ccd06aa2de5f006513af00000002=*0|2cc9b5c06aa2de5f006513ee00000003=+1,3,2@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=2cc9ccd06aa2de5f006513af00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=2cc9b5c06aa2de5f006513ee00000003;caption=;state=2098172;dir=2;layer=2;row=0;pos=0;prop=100000;bestw=532;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,2,0)=534|</report>
+<report name="report_fit_summary_Hardness (5)" width="1280" height="720">2cc9c2906aa2eb7a009845ac00000002=*0|2cc9b5c06aa2eb7a0098460900000003=+1,3,2@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=2cc9c2906aa2eb7a009845ac00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=2cc9b5c06aa2eb7a0098460900000003;caption=;state=2098172;dir=2;layer=2;row=0;pos=0;prop=100000;bestw=532;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,2,0)=534|</report>
+<report name="report_fit_summary_Hardness (C)" width="1280" height="720">109f6a506aa38e47021a7afd00000002=*0|109f65306aa38e47021a7b1d00000003=+1,3,2@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=109f6a506aa38e47021a7afd00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=109f65306aa38e47021a7b1d00000003;caption=;state=2098172;dir=2;layer=2;row=0;pos=0;prop=100000;bestw=532;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,2,0)=534|</report>
+<report name="report_fit_summary_Hardness V1" width="1280" height="720">42a224306a1d75441bc0652f00000002=*0|42a23dd06a1d75441bc0659d00000003=+1,3,2@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42a224306a1d75441bc0652f00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42a23dd06a1d75441bc0659d00000003;caption=;state=2098172;dir=2;layer=2;row=0;pos=0;prop=100000;bestw=532;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,2,0)=534|</report>
+<report name="report_fit_summary_Hardness V2" width="1280" height="720">42a238b06a1d78b31bcdce6400000002=*0|42a226c06a1d78b31bcdcea900000003=+1,3,2@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42a238b06a1d78b31bcdce6400000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=524;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42a226c06a1d78b31bcdcea900000003;caption=;state=2098172;dir=2;layer=2;row=0;pos=0;prop=100000;bestw=532;besth=526;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(2,2,0)=534|</report>
+<report name="report_point_prediction_" width="1280" height="720">28d721706aa2d8f1004fdf0300000002=*0,1@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=536;besth=281;minw=536;minh=281;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=28d721706aa2d8f1004fdf0300000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=1070;besth=561;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|</report>
+<report name="report_solutions_" width="1280" height="720">42ed53f06a1d8a561c12b3a300000002=*0|42ed6b006a1d8a561c12b3d900000003=1,+2,3@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42ed53f06a1d8a561c12b3a300000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=1062;besth=256;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=42ed6b006a1d8a561c12b3d900000003;caption=;state=2098172;dir=3;layer=2;row=0;pos=0;prop=100000;bestw=1062;besth=264;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(3,2,0)=266|</report>
+</perspectives>
+<tables>
+<table name="Actual Equation" isTransposed="false">0</table>
+<table name="Analysis of Variance" isTransposed="false">0</table>
+<table name="Anova Coded Equation" isTransposed="false">0</table>
+<table name="Anova Equations" isTransposed="false">0</table>
+<table name="Anova Fit Statistics" isTransposed="false">0</table>
+<table name="Coefficients" isTransposed="false">0</table>
+<table name="Confirmation" isTransposed="false">0</table>
+<table name="Confirmation Location #1" isTransposed="false">0</table>
+<table name="Confirmation Response Data  " isTransposed="false">0</table>
+<table name="Constraints" isTransposed="false">0</table>
+<table name="Current Point" isTransposed="false">0</table>
+<table name="Design Constraints" isTransposed="false">0</table>
+<table name="Diagnostics Report" isTransposed="false">0</table>
+<table name="Fit Summary" isTransposed="false">0</table>
+<table name="Lack of Fit Tests" isTransposed="false">0</table>
+<table name="Model Comparison Statistics" isTransposed="false">0</table>
+<table name="Model Summary Statistics" isTransposed="false">0</table>
+<table name="Point Prediction" isTransposed="false">0</table>
+<table name="Point Prediction Factors" isTransposed="false">0</table>
+<table name="Sequential Model Sum of Squares Type I" isTransposed="false">0</table>
+<table name="Solutions" isTransposed="false">0</table>
+<table name="Starting Points" isTransposed="false">0</table>
+</tables>
+</guiState>
+<designModel terms="10">
+<designTerm id="0" coef="1" term="Intercept"/>
+<designTerm id="1" coef="1" term="A"/>
+<designTerm id="2" coef="1" term="B"/>
+<designTerm id="3" coef="1" term="C"/>
+<designTerm id="4" coef="1" term="AB"/>
+<designTerm id="5" coef="1" term="AC"/>
+<designTerm id="6" coef="1" term="BC"/>
+<designTerm id="7" coef="1" term="A^2"/>
+<designTerm id="8" coef="1" term="B^2"/>
+<designTerm id="9" coef="1" term="C^2"/>
+</designModel>
+<run stdNo="9" dsnId="11" runNo="1" blockNo="0" blockName="Block 1" pointId="12" pointName="IBFact" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">250</facActual>
+<facActual id="B">160</facActual>
+<facActual id="C">12</facActual>
+<resVal id="1">82</resVal>
+<resVal id="2">89</resVal>
+<resVal id="3">230</resVal>
+<resVal id="4">99.3</resVal>
+</run>
+<run stdNo="14" dsnId="3" runNo="2" blockNo="0" blockName="Block 1" pointId="12" pointName="IBFact" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">350</facActual>
+<facActual id="B">60</facActual>
+<facActual id="C">18</facActual>
+<resVal id="1">114</resVal>
+<resVal id="2">78</resVal>
+<resVal id="3">360</resVal>
+<resVal id="4">98.5</resVal>
+</run>
+<run stdNo="6" dsnId="7" runNo="3" blockNo="0" blockName="Block 1" pointId="12" pointName="IBFact" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">350</facActual>
+<facActual id="B">160</facActual>
+<facActual id="C">18</facActual>
+<resVal id="1">125</resVal>
+<resVal id="2">70</resVal>
+<resVal id="3">450</resVal>
+<resVal id="4">97.9</resVal>
+</run>
+<run stdNo="4" dsnId="5" runNo="4" blockNo="0" blockName="Block 1" pointId="12" pointName="IBFact" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">250</facActual>
+<facActual id="B">60</facActual>
+<facActual id="C">12</facActual>
+<resVal id="1">78</resVal>
+<resVal id="2">93</resVal>
+<resVal id="3">190</resVal>
+<resVal id="4">99.6</resVal>
+</run>
+<run stdNo="15" dsnId="14" runNo="5" blockNo="0" blockName="Block 1" pointId="12" pointName="IBFact" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">150</facActual>
+<facActual id="B">110</facActual>
+<facActual id="C">12</facActual>
+<resVal id="1">68</resVal>
+<resVal id="2">96</resVal>
+<resVal id="3">150</resVal>
+<resVal id="4">100.1</resVal>
+</run>
+<run stdNo="1" dsnId="3" runNo="6" blockNo="0" blockName="Block 1" pointId="12" pointName="IBFact" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">350</facActual>
+<facActual id="B">110</facActual>
+<facActual id="C">24</facActual>
+<resVal id="1">134</resVal>
+<resVal id="2">65</resVal>
+<resVal id="3">520</resVal>
+<resVal id="4">97.2</resVal>
+</run>
+<run stdNo="5" dsnId="6" runNo="7" blockNo="0" blockName="Block 1" pointId="7" pointName="Center" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">250</facActual>
+<facActual id="B">110</facActual>
+<facActual id="C">18</facActual>
+<resVal id="1">124.71</resVal>
+<resVal id="2">91.88</resVal>
+<resVal id="3">248.6</resVal>
+<resVal id="4">98.97</resVal>
+</run>
+<run stdNo="12" dsnId="13" runNo="8" blockNo="0" blockName="Block 1" pointId="12" pointName="IBFact" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">250</facActual>
+<facActual id="B">60</facActual>
+<facActual id="C">24</facActual>
+<resVal id="1">118</resVal>
+<resVal id="2">78</resVal>
+<resVal id="3">400</resVal>
+<resVal id="4">98.2</resVal>
+</run>
+<run stdNo="8" dsnId="6" runNo="9" blockNo="0" blockName="Block 1" pointId="7" pointName="Center" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">250</facActual>
+<facActual id="B">110</facActual>
+<facActual id="C">18</facActual>
+<resVal id="1">114.73</resVal>
+<resVal id="2">89.91</resVal>
+<resVal id="3">239.6</resVal>
+<resVal id="4">99.17</resVal>
+</run>
+<run stdNo="2" dsnId="3" runNo="10" blockNo="0" blockName="Block 1" pointId="12" pointName="IBFact" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">350</facActual>
+<facActual id="B">110</facActual>
+<facActual id="C">12</facActual>
+<resVal id="1">95</resVal>
+<resVal id="2">82</resVal>
+<resVal id="3">280</resVal>
+<resVal id="4">99</resVal>
+</run>
+<run stdNo="7" dsnId="9" runNo="11" blockNo="0" blockName="Block 1" pointId="12" pointName="IBFact" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">250</facActual>
+<facActual id="B">160</facActual>
+<facActual id="C">24</facActual>
+<resVal id="1">125</resVal>
+<resVal id="2">72</resVal>
+<resVal id="3">460</resVal>
+<resVal id="4">97.8</resVal>
+</run>
+<run stdNo="3" dsnId="4" runNo="12" blockNo="0" blockName="Block 1" pointId="12" pointName="IBFact" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">150</facActual>
+<facActual id="B">160</facActual>
+<facActual id="C">18</facActual>
+<resVal id="1">92</resVal>
+<resVal id="2">88</resVal>
+<resVal id="3">260</resVal>
+<resVal id="4">99.2</resVal>
+</run>
+<run stdNo="10" dsnId="6" runNo="13" blockNo="0" blockName="Block 1" pointId="7" pointName="Center" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">250</facActual>
+<facActual id="B">110</facActual>
+<facActual id="C">18</facActual>
+<resVal id="1">121</resVal>
+<resVal id="2">90.94</resVal>
+<resVal id="3">226.6</resVal>
+<resVal id="4">99.29</resVal>
+</run>
+<run stdNo="11" dsnId="12" runNo="14" blockNo="0" blockName="Block 1" pointId="12" pointName="IBFact" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">150</facActual>
+<facActual id="B">60</facActual>
+<facActual id="C">18</facActual>
+<resVal id="1">108</resVal>
+<resVal id="2">92</resVal>
+<resVal id="3">210</resVal>
+<resVal id="4">99.8</resVal>
+</run>
+<run stdNo="13" dsnId="14" runNo="15" blockNo="0" blockName="Block 1" pointId="12" pointName="IBFact" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">150</facActual>
+<facActual id="B">110</facActual>
+<facActual id="C">24</facActual>
+<resVal id="1">110</resVal>
+<resVal id="2">85</resVal>
+<resVal id="3">320</resVal>
+<resVal id="4">98.8</resVal>
+</run>
+<responseModel rmId="1" analysisUuId="34dea953-0b56-4a8a-87e3-51fc80f58d5f" name="Hardness (C)">
+<response id="1" responseUuId="335ed968-570c-4efb-a301-dee43f775e5c" modelBase="Polynomial" useFiMReplicate="false" stdDevSource="ANOVA" stdDev="4.50316481303243"/>
+<blockEffectType random="false"/>
+<transform id="0" name="No Transform" successLevel="1"/>
+<compModel modelType="Polynomial" calcType="CodedCalc" hierarchicalActual="false" terms="10">
+<equationTerm id="0" coef="120.146666666667" term="Intercept"/>
+<equationTerm id="1" coef="11.25" term="A"/>
+<equationTerm id="2" coef="0.749999999999998" term="B"/>
+<equationTerm id="3" coef="20.5" term="C"/>
+<equationTerm id="4" coef="6.75" term="AB"/>
+<equationTerm id="5" coef="-0.749999999999976" term="AC"/>
+<equationTerm id="6" coef="0.749999999999996" term="BC"/>
+<equationTerm id="7" coef="-4.69833333333332" term="A^2"/>
+<equationTerm id="8" coef="-5.69833333333335" term="B^2"/>
+<equationTerm id="9" coef="-13.6983333333333" term="C^2"/>
+<equationTerm id="10" term="Curvature"/>
+</compModel>
+</responseModel>
+<responseModel rmId="2" analysisUuId="3d5e077a-5814-4c88-b4ce-cfffe80daa0c" name="Dissolution (C)">
+<response id="2" responseUuId="2accbca5-b6ad-4f61-88b6-fd4dd57d9e99" modelBase="Polynomial" useFiMReplicate="false" stdDevSource="ANOVA" stdDev="0.994162964508335"/>
+<blockEffectType random="false"/>
+<transform id="0" name="No Transform" successLevel="1"/>
+<compModel modelType="Polynomial" calcType="CodedCalc" hierarchicalActual="false" terms="10">
+<equationTerm id="0" coef="90.91" term="Intercept"/>
+<equationTerm id="1" coef="-8.25" term="A"/>
+<equationTerm id="2" coef="-2.75" term="B"/>
+<equationTerm id="3" coef="-7.5" term="C"/>
+<equationTerm id="4" coef="-1" term="AB"/>
+<equationTerm id="5" coef="-1.49999999999999" term="AC"/>
+<equationTerm id="6" coef="-0.5" term="BC"/>
+<equationTerm id="7" coef="-4.955" term="A^2"/>
+<equationTerm id="8" coef="-3.955" term="B^2"/>
+<equationTerm id="9" coef="-3.955" term="C^2"/>
+<equationTerm id="10" term="Curvature"/>
+</compModel>
+</responseModel>
+<responseModel rmId="3" analysisUuId="c5b35b44-b86e-49c0-b91f-fa760bf1a655" name="DT (C)">
+<response id="3" responseUuId="1950bc19-2fc9-4804-bd96-26e294cb1ff7" modelBase="Polynomial" useFiMReplicate="false" stdDevSource="ANOVA" stdDev="10.6739558427667"/>
+<blockEffectType random="false"/>
+<transform id="0" name="No Transform" successLevel="1"/>
+<compModel modelType="Polynomial" calcType="CodedCalc" hierarchicalActual="false" terms="10">
+<equationTerm id="0" coef="238.266666666667" term="Intercept"/>
+<equationTerm id="1" coef="83.7500000000001" term="A"/>
+<equationTerm id="2" coef="30" term="B"/>
+<equationTerm id="3" coef="106.25" term="C"/>
+<equationTerm id="4" coef="10" term="AB"/>
+<equationTerm id="5" coef="17.5" term="AC"/>
+<equationTerm id="6" coef="4.99999999999999" term="BC"/>
+<equationTerm id="7" coef="39.6166666666667" term="A^2"/>
+<equationTerm id="8" coef="42.1166666666666" term="B^2"/>
+<equationTerm id="9" coef="39.6166666666667" term="C^2"/>
+<equationTerm id="10" term="Curvature"/>
+</compModel>
+</responseModel>
+<responseModel rmId="4" analysisUuId="bdff16e9-b2ab-4533-bf8f-102158b998f2" name="Assay (C)">
+<response id="4" responseUuId="2c21dca4-13e1-46c9-ac65-1e9ced1de0a2" modelBase="Polynomial" useFiMReplicate="false" stdDevSource="ANOVA" stdDev="0.133990049381786"/>
+<blockEffectType random="false"/>
+<transform id="0" name="No Transform" successLevel="1"/>
+<compModel modelType="Polynomial" calcType="CodedCalc" hierarchicalActual="false" terms="10">
+<equationTerm id="0" coef="99.1433333333333" term="Intercept"/>
+<equationTerm id="1" coef="-0.662499999999999" term="A"/>
+<equationTerm id="2" coef="-0.237499999999999" term="B"/>
+<equationTerm id="3" coef="-0.749999999999999" term="C"/>
+<equationTerm id="4" coef="2.60314723863028E-17" term="AB"/>
+<equationTerm id="5" coef="-0.125000000000001" term="AC"/>
+<equationTerm id="6" coef="-0.0250000000000021" term="BC"/>
+<equationTerm id="7" coef="-0.121666666666667" term="A^2"/>
+<equationTerm id="8" coef="-0.171666666666667" term="B^2"/>
+<equationTerm id="9" coef="-0.246666666666671" term="C^2"/>
+<equationTerm id="10" term="Curvature"/>
+</compModel>
+</responseModel>
+<optimization models="11">
+<criteria modType="Factor" id="1" goal="InRange" type="Numeric" target="0" limitLow="-1" limitHigh="1" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Coded" scale="Transform" displayScale="Original"/>
+<criteria modType="Factor" id="2" goal="InRange" type="Numeric" target="0" limitLow="-1" limitHigh="1" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Coded" scale="Transform" displayScale="Original"/>
+<criteria modType="Factor" id="3" goal="InRange" type="Numeric" target="0" limitLow="-1" limitHigh="1" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Coded" scale="Transform" displayScale="Original"/>
+<criteria modType="Response" id="1" goal="Target" type="Numeric" target="115.9" limitLow="100" limitHigh="130" weightLow="1" weightHigh="1" overlayLow="100" overlayHigh="130" importance="3" coding="Actual" scale="Transform" displayScale="Original" responseUuId="335ed968-570c-4efb-a301-dee43f775e5c" rmId="1" analysisUuId="34dea953-0b56-4a8a-87e3-51fc80f58d5f"/>
+<criteria modType="POE" id="1" goal="None" type="Numeric" target="Missing" limitLow="Missing" limitHigh="Missing" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Coded" scale="Transform" displayScale="Original" responseUuId="335ed968-570c-4efb-a301-dee43f775e5c" rmId="1" analysisUuId="34dea953-0b56-4a8a-87e3-51fc80f58d5f"/>
+<criteria modType="Response" id="2" goal="Maximum" type="Numeric" target="96" limitLow="80" limitHigh="96" weightLow="1" weightHigh="1" overlayLow="80" overlayHigh="Missing" importance="5" coding="Actual" scale="Transform" displayScale="Original" responseUuId="2accbca5-b6ad-4f61-88b6-fd4dd57d9e99" rmId="2" analysisUuId="3d5e077a-5814-4c88-b4ce-cfffe80daa0c"/>
+<criteria modType="POE" id="2" goal="None" type="Numeric" target="Missing" limitLow="Missing" limitHigh="Missing" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Coded" scale="Transform" displayScale="Original" responseUuId="2accbca5-b6ad-4f61-88b6-fd4dd57d9e99" rmId="2" analysisUuId="3d5e077a-5814-4c88-b4ce-cfffe80daa0c"/>
+<criteria modType="Response" id="3" goal="Minimum" type="Numeric" target="250" limitLow="250" limitHigh="450" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="300" importance="3" coding="Actual" scale="Transform" displayScale="Original" responseUuId="1950bc19-2fc9-4804-bd96-26e294cb1ff7" rmId="3" analysisUuId="c5b35b44-b86e-49c0-b91f-fa760bf1a655"/>
+<criteria modType="POE" id="3" goal="None" type="Numeric" target="Missing" limitLow="Missing" limitHigh="Missing" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Coded" scale="Transform" displayScale="Original" responseUuId="1950bc19-2fc9-4804-bd96-26e294cb1ff7" rmId="3" analysisUuId="c5b35b44-b86e-49c0-b91f-fa760bf1a655"/>
+<criteria modType="Response" id="4" goal="Target" type="Numeric" target="100" limitLow="96" limitHigh="100.1" weightLow="1" weightHigh="1" overlayLow="96" overlayHigh="100.1" importance="3" coding="Actual" scale="Transform" displayScale="Original" responseUuId="2c21dca4-13e1-46c9-ac65-1e9ced1de0a2" rmId="4" analysisUuId="bdff16e9-b2ab-4533-bf8f-102158b998f2"/>
+<criteria modType="POE" id="4" goal="None" type="Numeric" target="Missing" limitLow="Missing" limitHigh="Missing" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Coded" scale="Transform" displayScale="Original" responseUuId="2c21dca4-13e1-46c9-ac65-1e9ced1de0a2" rmId="4" analysisUuId="bdff16e9-b2ab-4533-bf8f-102158b998f2"/>
+<SeedVal>433592471</SeedVal>
+</optimization>
+<buildInfo noOfCenterPoints="3" buildTime="18"/>
+</DEXXMLDoc>
